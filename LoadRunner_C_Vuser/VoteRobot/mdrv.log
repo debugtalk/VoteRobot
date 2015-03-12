@@ -1,0 +1,63 @@
+Virtual User Script started at : 2015-03-12 13:58:49
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 7; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "D:\LoadRunner\script\Voting\4006880288_Voting\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(13): Notify: Saving Parameter "targetString_value = eIJqJbywRSHMbHgK3eKlA7UQrf".
+Action.c(15): Notify: Transaction "Vote" started.
+Action.c(17): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(20): Notify: Parameter Substitution: parameter "UserAgent" =  "Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML like Gecko) Version/4.0 Mobile Safari/533.1 MicroMessenger/6.0 NetType"
+Action.c(20): web_add_auto_header("User-Agent") was successful  	[MsgId: MMSG-26392]
+Action.c(22): Notify: Parameter Substitution: parameter "targetString_value" =  "eIJqJbywRSHMbHgK3eKlA7UQrf"
+Action.c(22): t=2661ms: 330-byte response headers for "http://www.4006880288.com/wtg1/mobile/user.php" (RelFrameId=1, Internal ID=1)
+Action.c(22):     HTTP/1.1 200 OK\r\n
+Action.c(22):     Date: Thu, 12 Mar 2015 06:00:42 GMT\r\n
+Action.c(22):     Server: Apache/2.2.4 (Win32) PHP/5.2.6\r\n
+Action.c(22):     X-Powered-By: PHP/5.2.6\r\n
+Action.c(22):     Set-Cookie: ecsid=cf35f52671939721bd026c1231c266ec1a194d85; path=/\r\n
+Action.c(22):     Cache-control: private\r\n
+Action.c(22):     Content-Length: 144\r\n
+Action.c(22):     Keep-Alive: timeout=5, max=100\r\n
+Action.c(22):     Connection: Keep-Alive\r\n
+Action.c(22):     Content-Type: text/html; charset=utf-8\r\n
+Action.c(22):     \r\n
+Action.c(22): t=2782ms: 140-byte response body for "http://www.4006880288.com/wtg1/mobile/user.php" (RelFrameId=1, Internal ID=1)
+Action.c(22):     \r\n
+Action.c(22):     <script>alert('投票成功!');</script><script>location.href='zuopin_info.php?md_id=70&opid=o
+Action.c(22):     wzeBjeIJqJbywRSHMbHgK3eKlA7UQrf&id=38';</script>
+Action.c(22): Registered web_reg_find successful for "Text=投票成功!" (count=1)  	[MsgId: MMSG-26364]
+Action.c(22): web_custom_request("Voting") was successful, 144 body bytes, 330 header bytes  	[MsgId: MMSG-26386]
+Action.c(32): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(35): Notify: Parameter Substitution: parameter "UserAgent" =  "Mozilla/5.0 (Linux; U; Android 2.2; en-us; Nexus One Build/FRF91) AppleWebKit/533.1 (KHTML like Gecko) Version/4.0 Mobile Safari/533.1 MicroMessenger/6.0 NetType"
+Action.c(35): web_add_auto_header("User-Agent") was successful  	[MsgId: MMSG-26392]
+Action.c(37): Notify: Parameter Substitution: parameter "zpid" =  "11"
+Action.c(37): Notify: Parameter Substitution: parameter "targetString_value" =  "eIJqJbywRSHMbHgK3eKlA7UQrf"
+Action.c(37): t=4122ms: 261-byte response headers for "http://www.4006880288.com/wtg1/mobile/user.php" (RelFrameId=1, Internal ID=2)
+Action.c(37):     HTTP/1.1 200 OK\r\n
+Action.c(37):     Date: Thu, 12 Mar 2015 06:00:44 GMT\r\n
+Action.c(37):     Server: Apache/2.2.4 (Win32) PHP/5.2.6\r\n
+Action.c(37):     X-Powered-By: PHP/5.2.6\r\n
+Action.c(37):     Cache-control: private\r\n
+Action.c(37):     Content-Length: 144\r\n
+Action.c(37):     Keep-Alive: timeout=5, max=99\r\n
+Action.c(37):     Connection: Keep-Alive\r\n
+Action.c(37):     Content-Type: text/html; charset=utf-8\r\n
+Action.c(37):     \r\n
+Action.c(37): t=4178ms: 140-byte response body for "http://www.4006880288.com/wtg1/mobile/user.php" (RelFrameId=1, Internal ID=2)
+Action.c(37):     \r\n
+Action.c(37):     <script>alert('投票成功!');</script><script>location.href='zuopin_info.php?md_id=70&opid=o
+Action.c(37):     wzeBjeIJqJbywRSHMbHgK3eKlA7UQrf&id=11';</script>
+Action.c(37): Registered web_reg_find successful for "Text=投票成功!" (count=1)  	[MsgId: MMSG-26364]
+Action.c(37): web_custom_request("VotingOthers") was successful, 144 body bytes, 261 header bytes  	[MsgId: MMSG-26386]
+Action.c(43): Notify: Transaction "Vote" ended with "Pass" status (Duration: 2.5857 Wasted Time: 1.2337).
+Action.c(47): lr_think_time: 48.00 seconds.
+Abort was called from an action.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Vuser 0 (thread 30056), ended OK."
